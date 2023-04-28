@@ -1,0 +1,219 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-logo-desktop",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "flex-layout.row#footer-logo-desktop":{
+    "props":{
+      "blockClass":"logo-footer"
+    },
+    "children":["image#footer-logo"]
+   
+  },
+  "image#footer-logo":{
+    "props":{
+      "src": "assets/images/footer-logo.svg"
+    }
+  },
+  "flex-layout.row#footer-1-desktop":{
+    "children":[
+      "flex-layout.col#infos"
+    ]
+  },
+  "flex-layout.col#infos":{
+    "children":[
+    "rich-text#telefone-contato", 
+    "rich-text#namber",
+    "rich-text#horarios-atendimento",
+    "rich-text#atendimento", 
+    "rich-text#email", 
+    "rich-text#endereco-email",
+    "rich-text#whatsapp", 
+    "rich-text#namber-whatsapp"
+  ]
+  },
+  "rich-text#telefone-contato": {
+    "props": {
+      "blockClass":"infos-negrito",
+      "text": "Telefone para contato"
+    }
+},
+  "rich-text#namber":{
+    "props":{
+      "blockClass":"infos-sub",
+      "text": "42 3532-4661"
+    }
+  },
+  "rich-text#horarios-atendimento": {
+    "props": {
+      "blockClass":"infos-negrito",
+      "text": "Nosso horário de atendimento"
+    }
+},
+ "rich-text#atendimento":{
+  "props":{
+    "blockClass":"infos-sub",
+    "text": "Segunda à Sexta das 8h às 18h | Sábado das 8:30 às 12h"
+  }
+},
+"rich-text#whatsapp": {
+  "props": {
+    "blockClass":"infos-negrito",
+    "text": "Entre em conttao pelo nosso Whatsapp"
+  }
+},
+  "rich-text#namber-whatsapp":{
+    "props":{
+      "blockClass":"infos-sub",
+      "text": "42 98401-7730"
+    }
+  },
+  "rich-text#email": {
+    "props": {
+      "blockClass":"infos-negrito",
+      "text": "Entre em contato atraves do nosso email"
+    }
+},
+  "rich-text#endereco-email":{
+    "props":{
+      "blockClass":"infos-sub",
+      "text": "comercial@basedeappoio.com.br"
+    }
+  },
+  "flex-layout.row#footer-3-desktop":{
+      "props":{
+        "blockClass":"pages-footer"
+      },
+      "children":["flex-layout.col#pagesfooter"]
+    },
+    "flex-layout.col#pagesfooter":{
+      "children":[
+        "link#institucional",
+        "link#privacidade",
+        "link#troca",
+        "link#entrega",
+        "link#sobrenos"
+      ]
+  },
+  "link#institucional": {
+    "props": {
+      "label": "Institucional",
+      "blockClass": "text-h1-footer"
+    }
+  },
+  "link#privacidade": {
+    "props": {
+      "label": "Política de privacidade",
+      "blockClass": "text-negrito"
+    }
+  },
+  "link#troca": {
+    "props": {
+      "label": "Política de troca",
+      "blockClass": "text-negrito"
+    }
+  },
+  "link#entrega": {
+    "props": {
+      "label": "Polícita de entrega",
+      "blockClass": "text-negrito"
+    }
+  },
+  "link#sobrenos": {
+    "props": {
+      "label": "Sobre nós",
+      "blockClass": "text-negrito"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["flex-layout.col#infos-card-redes"],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "flex-layout.col#infos-card-redes":{
+    "props":{
+      "blockClass":"payment-methods-redes"
+    },
+    "children":["accepted-payment-methods", "social-networks"]
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+    }
+  },
+  "social-networks": {
+    "props": {
+      "blockClass":"redes-footer",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Linkedin",
+          "url": "https://www.linkedin.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "image#footer-mobile",
+      "accepted-payment-methods",
+      "social-networks"
+     
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["flex-layout.col#pagesfooter"]
+  },
+  "image#footer-mobile": {
+    "props": {
+      "src":"assets/images/footer-logo.svg"
+    }
+  }
+}

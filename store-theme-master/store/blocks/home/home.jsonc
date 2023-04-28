@@ -1,0 +1,300 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo", /*carrossel principal da home*/
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#deals", /*faixa informativa*/
+      "__fold__",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#categorias-home",
+      "rich-text#shelf-title2",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#categorias-home2",
+      "rich-text#shelf-title3",
+      "flex-layout.row#shelf3",
+      "rich-text#shelf-title4",
+      "flex-layout.row#shelf4",
+      "rich-text#shelf-title5",
+      "flex-layout.row#shelf5",
+      "rich-text#shelf-title6",
+      "flex-layout.row#shelf6",
+      "flex-layout.row#cadastrese",
+      "flex-layout.row#cadastrese-mobile",
+      "newsletter"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/3691a79f-58e3-4db5-87c4-5afcc7c243a4___047b4eda1012526dd78e222a4efbe332.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
+          "mobileImage": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/d1cca555-631c-4986-b461-b88c24d52ebe___3704f8e28e012dca4be60a36d0dfb916.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Equipamentos Médicos",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "##  Acessibilidade e Mobilidade",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "##  Cuidados Pessoais",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title4": {
+    "props": {
+      "text": "##  Esterilização e Limpeza",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title5": {
+    "props": {
+      "text": "##  Estética",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelf-title6": {
+    "props": {
+      "text": "##  Odontologia",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "38"
+    }
+  },
+  "flex-layout.row#shelf2":{
+    "children":[
+      "list-context.product-list#demo2"
+    ]
+  },
+  "flex-layout.row#categorias-home2":{
+    "props":{
+      "blockClass":"home-categorias2"
+    },
+      "children":["image#categoria1", "image#categoria2"]
+  },
+  "image#categoria1":{
+  "props": {
+    "src": "assets/images/fisio e fitness - banner.svg"
+   
+  }
+},
+"image#categoria2":{
+  "props": {
+    "src": "assets/images/equipamentos medicos - banner.svg"
+   
+  }
+},
+"flex-layout.row#cadastrese":{
+  "props":{
+    "blockClass":"cadastrese"
+  },
+  "children":["image#cadastrese"]
+},
+"image#cadastrese":{
+  "props":{
+    "src":"assets/images/cadastrese.svg"
+    
+  }
+
+},
+"flex-layout.row#cadastrese-mobile":{
+  "props":{
+    "blockClass":"cadastrese-mobile"
+  },
+  "children":["image#cadastrese-mobile"]
+},
+"image#cadastrese-mobile":{
+  "props":{
+    "blockClass":"img-cadastrese-mobile",
+    "src":"assets/images/banner-footer-mobile.svg"
+    
+  }
+
+},
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "1"
+    }
+  },
+  "flex-layout.row#shelf3":{
+    "children":[
+      "list-context.product-list#demo3"
+    ]
+  },
+  "list-context.product-list#demo3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "12"
+    }
+  },
+  "flex-layout.row#shelf4":{
+    "children":[
+      "list-context.product-list#demo4"
+    ]
+  },
+  "list-context.product-list#demo4": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "50"
+    }
+  },
+  "flex-layout.row#shelf5":{
+    "children":[
+      "list-context.product-list#demo5"
+    ]
+  },
+  "list-context.product-list#demo5": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "58"
+    }
+  },
+  "flex-layout.row#shelf6":{
+    "children":[
+      "list-context.product-list#demo6"
+    ]
+  },
+  "list-context.product-list#demo6": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "category": "125"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#categorias-home":{
+      "children":["list-context.image-list#categorias-images"]
+  },
+  "list-context.image-list#categorias-images": {
+    "children": ["slider-layout#categorias"],
+    "props": {
+      "images": [
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/8e614a35-0e40-40a5-8685-e3555941938e___8f5090eddcd3ef85b99203b44d6d65d8.png",
+          "description": "Diabetes"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/931bf7b5-42dc-49c8-8dd3-3e697943f322___29e359fe0449a711dd41ac88fc1578d4.png",
+          "description": "homecare"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/9a137190-e29c-43a9-88e4-f8db6c28c8d9___53e9f6c2cd816165b8c3f4788629525a.png",
+          "description": "homecare"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/3d65949d-1a57-4419-8d39-94b0bfee9634___ad603e669060078dc8cf5477a782a4b1.png",
+          "description": "homecare"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/0a8b138e-0954-4fac-be98-0990e3141feb___66d06b6a7120bb8b279421a2f178c23e.png",
+          "description": "homecare"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/94beb038-e6ba-43fb-8c79-a1140c654a9c___f024a8ea145ba18b8fe9c7f62f9bc41c.png",
+          "description": "homecare"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/33eb5954-3507-4f19-a629-9ebcccee654d___6844532a9dc0577d256b7a961c20d038.png"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/be2f3e75-e139-4b36-a968-688c06556c2e___7b12c4814fa34812721dcc1807c0e60a.png"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/d6e7f758-9e21-4c2c-bec4-a492564630ef___398b5d1fe860b0cb8cf1e80a5cf447b2.png"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/3ffd62fa-7186-4339-bea7-77f9d4ca7832___26433c1b2e8e3abfa5fa44d31be5502f.png"
+        },
+        {
+          "image": "https://basedeapoio.vtexassets.com/assets/vtex.file-manager-graphql/images/8b17b230-722b-4d65-a98e-d11eda1be586___23fb4322af7881246e5f5817809cc7e7.png"
+        }
+        
+      
+        
+      ]
+    }
+  },
+  "slider-layout#categorias":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "home-categorias"
+    }
+  },
+  "info-card#home": {
+
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/grupoImg.svg",
+      "headline": "Produtos pessoais e profissionais",
+      "callToActionText": "Compre agora",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  }
+}

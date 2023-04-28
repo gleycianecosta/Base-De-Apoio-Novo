@@ -1,0 +1,16 @@
+{
+  "name": "store-theme-master",
+  "version": "1.0.36",
+  "main": "index.js",
+  "author": "gleycianecosta",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@vtex/tsconfig": "^0.6.0"
+  }
+}
