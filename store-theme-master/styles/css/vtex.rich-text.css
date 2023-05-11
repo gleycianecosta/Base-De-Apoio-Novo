@@ -1,14 +1,22 @@
-.container--deals {
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
-  font-family: 'Nunito';
-}
+
 .paragraph--top-menu-text{
   color: black;
   font-size: 16px;
   font-family: 'Nunito';
   margin: 2px;
+}
+.paragraph--text-h1-footer{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-family: 'Nunito';
+  color: #3f3f40;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
 }
 .wrapper--infos-negrito{
   height: 25px;
@@ -17,6 +25,10 @@
 }
 .wrapper--infos-sub{
   height: 25px;
+  font-family: 'Nunito';
+}
+.wrapper--infos-sub-atendimento{
+  height: 42px;
   font-family: 'Nunito';
 }
 .link--infos-sub{
@@ -36,10 +48,6 @@
   font-family: 'Nunito';
 }
 
-.container--deals .paragraph {
-  margin: 0;
-  font-family: 'Nunito';
-}
 
 .container--link {
   justify-content: center;

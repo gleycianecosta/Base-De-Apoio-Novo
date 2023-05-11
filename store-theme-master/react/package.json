@@ -1,0 +1,22 @@
+{
+  "name": "headetags",
+  "version": "1.0.0",
+  "description": "header",
+  "main": "MyHeadTags.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gleycianecosta",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@types/react": "^16.14.41",
+    "@vtex/tsconfig": "^0.6.0",
+    "babel-runtime": "^6.26.0",
+    "react": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-intl": "^6.4.2",
+    "regenerator-runtime": "^0.13.11",
+    "typescript": "3.9.7"
+  }
+}

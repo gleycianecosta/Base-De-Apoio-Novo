@@ -1,15 +1,35 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": ["footer-layout.desktop",  "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
+   
     "children": [
+      "flex-layout.row#footerdesktop",
+      "flex-layout.row#footermobile"
+    ]
+  },
+  "flex-layout.row#footerdesktop":{
+    "props":{
+      "blockClass":"footerP1"
+    },
+    "children":[
       "flex-layout.row#footer-logo-desktop",
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-3-desktop",
       "flex-layout.row#footer-2-desktop"
     ]
   },
+  "flex-layout.row#footermobile":{
+    "props":{
+      "blockClass":"footerP2"
+    },
+    "children":[
+      "flex-layout.row#footer-desktop-2",
+      "flex-layout.row#producao"
+    ]
+  },
+ 
   "flex-layout.row#footer-logo-desktop":{
     "props":{
       "blockClass":"logo-footer"
@@ -23,6 +43,9 @@
     }
   },
   "flex-layout.row#footer-1-desktop":{
+    "props":{
+      "blockClass":"infos-atendimento"
+    },
     "children":[
       "flex-layout.col#infos"
     ]
@@ -60,13 +83,13 @@
  "rich-text#atendimento":{
   "props":{
     "blockClass":"infos-sub",
-    "text": "Segunda à Sexta das 8h às 18h | Sábado das 8:30 às 12h"
+    "text": "Seg à Sex das 8h às 18h | Sáb das 8:30h às 12h"
   }
 },
 "rich-text#whatsapp": {
   "props": {
     "blockClass":"infos-negrito",
-    "text": "Entre em conttao pelo nosso Whatsapp"
+    "text": "Entre em contato pelo nosso Whatsapp"
   }
 },
   "rich-text#namber-whatsapp":{
@@ -96,10 +119,11 @@
     "flex-layout.col#pagesfooter":{
       "children":[
         "link#institucional",
+        "link#sobrenos",
         "link#privacidade",
         "link#troca",
-        "link#entrega",
-        "link#sobrenos"
+        "link#entrega"
+        
       ]
   },
   "link#institucional": {
@@ -129,6 +153,7 @@
   "link#sobrenos": {
     "props": {
       "label": "Sobre nós",
+      "href": "/sobre-nos",
       "blockClass": "text-negrito"
     }
   },
@@ -140,18 +165,32 @@
   },
   "flex-layout.col#infos-card-redes":{
     "props":{
-      "blockClass":"payment-methods-redes"
+      "blockClass":"payment-methods-footer"
     },
-    "children":["accepted-payment-methods", "social-networks"]
+    "children":[ "rich-text#formas-de-pagamento","accepted-payment-methods"]
+  },
+  "rich-text#formas-de-pagamento":{
+    "props":{
+      "text": "Formas de pagamento",
+      "blockClass":"text-h1-footer"
+    }
   },
   "accepted-payment-methods": {
     "props": {
+      "showInColor":"true",
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
     }
+  },
+  "flex-layout.row#footer-desktop-2":{
+    "props":{
+      "blockClass":"redes-organizacoes"
+    },
+    "children":[ "social-networks" ]
   },
   "social-networks": {
     "props": {
       "blockClass":"redes-footer",
+      "showInColor":"true",
       "socialNetworks": [
         {
           "name": "Facebook",
@@ -161,14 +200,8 @@
           "name": "Instagram",
           "url": "https://www.instagram.com/vtextruecloud/"
         },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        },
+       
+       
         {
           "name": "Linkedin",
           "url": "https://www.linkedin.com/user/VTEXTV"
@@ -177,13 +210,16 @@
     }
   },
   "footer-layout.mobile": {
+    "props":{
+      "blockClass": "footer-mobile"
+    },
     "children": [
       "flex-layout.row#1-footer-mobile",
       "flex-layout.row#2-footer-mobile"
     ]
   },
   "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
+    "children": ["flex-layout.col#footer-1-mobile","flex-layout.row#producao"],
     "props": {
       "blockClass": "payment-methods",
       "paddingTop": 4,
@@ -192,28 +228,59 @@
   },
   "flex-layout.col#footer-1-mobile": {
     "children": [
-      "image#footer-mobile",
-      "accepted-payment-methods",
-      "social-networks"
-     
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
+      "social-networks" 
+    ]
+    
   },
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,
-      "paddingBottom": 4
+      "paddingBottom": 4,
+      "blockClass":"footer-info-mobile"
     },
-    "children": ["flex-layout.col#pagesfooter"]
+    "children": [  "image#footer-mobile", "flex-layout.row#footer-1-desktop","flex-layout.col#pagesfooter","flex-layout.row#footer-2-desktop"
+  ]
   },
   "image#footer-mobile": {
     "props": {
+      "blockClass":"image-footer-mobile",
       "src":"assets/images/footer-logo.svg"
+    }
+  },
+  "flex-layout.row#producao":{
+    "children":["list-context.image-list#iseller", "powered-by"]
+  },
+  "powered-by":{
+    "props":{
+      "blockClass":"vtex",
+      "showInColor":"true"
+    }
+  },
+  "list-context.image-list#iseller": {
+    "children": ["slider-layout#iseller"],
+
+    "props": {
+      
+      "images": [
+        {
+          "image": "assets/images/iseller.svg",
+          "link":"https://iseller.com.br/"
+        
+        }
+      ],
+      "blockClass":"iseller"
+      
+      
+    }
+  },
+  "slider-layout#iseller": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
     }
   }
 }

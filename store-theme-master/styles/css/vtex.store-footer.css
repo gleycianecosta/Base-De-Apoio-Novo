@@ -13,8 +13,17 @@
 .footerLayout{
   display: flex;
   justify-content: center;
-  background: #7EB4C1;
-  padding: 10px;
-  padding-bottom: 20px;
-  gap: 50px;
+  flex-direction: column;
+}
+.footerLayout--footer-mobile{
+  display: flex;
+  flex-direction: column;
+}
+.flexRow--redes-organizacoes{
+  display: flex;
+  align-items: flex-end;
+}
+.poweredByImage--vtex{
+  margin-left: 10px;
+  width: 100px;
 }

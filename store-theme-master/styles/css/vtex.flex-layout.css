@@ -6,7 +6,24 @@
   display: flex;
   align-items: center;
 }
-
+.flexRow--footerP1{
+  background: #7EB4C1;
+}
+.flexRow--footer-info-mobile{
+  background: #7EB4C1;
+}
+.flexCol--payment-methods-footer{
+  display: flex;
+  align-items: center;
+}
+.flexRowContent--infos-atendimento{
+  width: 350px;
+}
+.flexRowContent--footer-info-mobile{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .flexRowContent--minicart-icon-box:hover{
   cursor: pointer;
   -webkit-transform: scale(1.1);
@@ -44,10 +61,29 @@
   padding: 0.625rem 0.5rem;
   background-color: #f0f0f0;
 }
-
+.flexRowContent--footerP2{
+  width: 300px;
+}
+.flexRow--footerP2{
+  display: flex;
+}
 .flexRowContent---top :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
+}
+.flexRow--infos-atendimento{
+  width: 350px;
+}
+.flexRow--pages-footer{
+  margin-left: 115px;
+}
+.flexRowContent--footerP1{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding: 10px;
+  padding-bottom: 20px;
+  gap: 10px;
 }
 .flexRowContent--contact{
   font-weight: bold ;
@@ -56,12 +92,15 @@
   font-family: 'Nunito';
   padding-top: 16px  ;
 }
-
-.flexRow--deals {
-  background-color: #95C1BB;
-  padding: 14px 0px;
+.flexRow--informativo-mobile{
+  display: none;
 }
-.flex-layout-0-x-flexCol--payment-methods-redes{
+
+.flexRowContent--formas-de-pagamento{
+  display: flex;
+  flex-direction: column;
+}
+.flex-layout-0-x-flexCol---footer{
   display: flex;
   align-items: center;
 }
@@ -71,10 +110,18 @@
     justify-content: center;
     align-items: center;
   }
+  .flexRow--informativo-mobile{
+    display: block;
+  }
+  .flexCol--payment-methods-footer{
+    display: block;
+   
+  }
+  .flexRowContent--deals{
+    display: none;
+  }
 }
-.flexRow--deals .stretchChildrenWidth {
-  align-items: center;
-}
+
 
 .flexRow--deals .flexCol {
   align-items: center;

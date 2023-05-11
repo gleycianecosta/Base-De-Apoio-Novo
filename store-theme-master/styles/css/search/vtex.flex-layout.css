@@ -8,6 +8,15 @@
 .flexRowContent--savingsSummaryListDesktop {
   justify-content: flex-start;
 }
+.flexRow--footer-1{
+  display: flex;
+
+  justify-content: center;
+  background: #7EB4C1;
+  padding: 10px;
+  padding-bottom: 20px;
+  gap: 50px;
+}
 .stretchChildrenWidth{
   display: flex;
   flex-direction: column;
@@ -16,6 +25,7 @@
   justify-content: space-around;
 }
 .flexRow--home-categorias2{
+  margin-top: 10px;
   display: flex;
   width: 100%;
 }
@@ -44,12 +54,11 @@
 }
 .flexRow--payment-methods{
   display: flex;
-  align-items: center;
+ 
 }
 .flexRow--logo-footer{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .flexRow--buyNowButton :global(.vtex-button) {
   background: #eef3f7;
@@ -57,9 +66,7 @@
   color: #95C1BB;
   font-family: 'Nunito';
 }
-.flexRow--deals{
-  background-color: #F0F0F0;
-}
+
 .flexRow--buyNowButton:hover :global(.vtex-button) {
   background: #dbe9fd;
   border-color:#dbe9fd;

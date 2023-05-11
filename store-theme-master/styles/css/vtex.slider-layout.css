@@ -1,6 +1,10 @@
 .sliderLayoutContainer {
   justify-content: center;
 }
+.sliderTrack--fornecedores{
+  gap: 15px;
+  margin: 20px;
+}
 
 .sliderLayoutContainer--carousel {
   background-color: #F0F0F0;
